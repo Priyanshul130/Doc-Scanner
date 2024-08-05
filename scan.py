@@ -10,11 +10,10 @@ window.geometry("1200x550")
 window.title("my scanner")
 window.configure(bg="turquoise")
 
-#this revoes the maximixe button
 window.resizable(0,0)
 
-#load image
-img=cv2.imread("background.jpg")
+
+img=cv2.imread("<FILENAME WITH EXTENSION>")#Enter the filename 
 
 def displayImage(img):
     cv2image = cv2.cvtColor(img, cv2.COLOR_BGR2RGBA)
@@ -45,7 +44,7 @@ def ScanImg():
 
 
 def SaveTxt():
-    #"""Save the current file as a new file."""
+    
     filepath = filedialog.asksaveasfilename(defaultextension="txt")
     if not filepath:
         return
@@ -57,7 +56,7 @@ def SaveTxt():
 
 
 
-#gui
+
 panel=Label(window,bg="black")
 panel.grid(row=0,rowspan=12,padx=40,pady=30)
 displayImage(img)
