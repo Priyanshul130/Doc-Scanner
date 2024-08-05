@@ -13,7 +13,7 @@ window.configure(bg="turquoise")
 window.resizable(0,0)
 
 
-img=cv2.imread("background.jpg")
+img=cv2.imread("<FILENAME WITH EXTENSION>")#Enter the filename 
 
 def displayImage(img):
     cv2image = cv2.cvtColor(img, cv2.COLOR_BGR2RGBA)
