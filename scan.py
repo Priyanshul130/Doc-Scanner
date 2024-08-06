@@ -5,6 +5,10 @@ import cv2
 import playsound
 from tkinter import filedialog
 
+
+
+
+
 window=Tk()
 window.geometry("1200x550")
 window.title("my scanner")
